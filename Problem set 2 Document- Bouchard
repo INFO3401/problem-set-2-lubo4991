@@ -12,9 +12,6 @@ touch submission.txt = Creates text document
 cd .. = change the current directory to the parent(BACK BUTTON) directory
 Pwd = print working directory 
 
-. = Current directory
-/ = root
-~ = home
 
 2. What set of commands would you use to achieve the following: 
 
