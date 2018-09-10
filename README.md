@@ -1,0 +1,67 @@
+# problem-set-2-lubo4991
+problem-set-2-lubo4991 created by GitHub Classroom
+Lucas Bouchard
+9/5/18
+INFO Exploration
+
+Wednesday:
+1. Briefly describe what the following set of commands would achieve. What process would happen and what would be printed to the command line?
+
+cd ~ = Go to your home directory
+cd / = Go to you root directory
+mkdir ./problem_set_1 = In current directory, make a sub folder named “Problem set 1”
+touch submission.txt = Creates text document 
+cd .. = change the current directory to the parent(BACK BUTTON) directory
+Pwd = print working directory 
+
+. = Current directory
+/ = root
+~ = home
+
+2. What set of commands would you use to achieve the following: 
+Copy a document called config.txt from your home directory to the root directory. 
+
+Cd ~
+pwd
+Touch config.txt
+Cp ~/config.txt /
+
+Then, create a new directory in the root called preferences. Within preferences, copy prefs.txt from a matching directory called preferences in your home directory. 
+
+mkdir /preferences
+cp ~/preferences/prefs.txt /preferences
+
+Finally, determine that the start and end of the config.txt document in both root and home match.
+
+head -n 100 ~/preferences/prefs.txt
+tail -n 100 ~/preferences/prefs.txt
+
+
+3. 
+
+Root = The root shortcut is important for accessing the starting point for all files on your computer. The best way I understand “root” is by thinking of it as the harddrive directory.
+
+Home = The home shortcut is important because this is the main directory for which all user files are stored on your computer. I think of this as being your Facebook profile, where you upload and store pictures, well the root directory is where everyone’s profiles are stored. This might not be the best analogy but it helps me make sense of the two.
+
+Parent = The parent shortcut is useful for back tracking your steps as you navigate multiple directories. If you become lost at some point and you can’t remember the root of the folder you’re in, you can use this command to go backwards.
+
+4. 
+
+cd /user/INFO 3401/../homework/Problem1
+pwd = “/user/homework/Problem1”
+
+5.
+You have accidentally moved a file (~/Documents/datafile.csv) to your current directory rather than copying it. What command did you use to do that? What command should you have used to do that? What command might you use to undo it?
+
+
+What originally happened: 
+
+mv ~/Documents/datafile.csv .
+
+What you should have done:
+
+cp ~/Documents/datafile.csv .
+
+Command to Undo:
+
+mv ./Documents/datafile.csv ~
